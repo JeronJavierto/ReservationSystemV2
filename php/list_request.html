@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>List_Request</title>
+		<link rel="stylesheet" href="../stylesheet/style.css">
+		<h1>FACILITY RESERVATION SYSTEM</h1>
+	</head>
+	<body>
+		<ul class="menu">
+			<li class="home"><a href="home.html" class="home">HOME</a></li>
+			<li class="events"><a href="events.html" class="events">EVENTS</a></li>
+			<li class="faci"><a href="facilities.html" class="faci">FACILITIES</a></li>
+			<li class="reser"><a href="reservation.html" class="reser">RESERVATION</a></li>
+			<li class="req"><a href="request.html" class="req">REQUEST</a></li>
+			<li class="rep"><a href="reports.html" class="rep">REPORTS</a></li>
+		</ul>
+
+		<table>
+			<tr>
+				<th>ActID</th>
+				<th>ClientID</th>
+				<th>Activity</th>
+				<th>Decision</th>
+			</tr>
+		</table>
+	</body>
+</html>

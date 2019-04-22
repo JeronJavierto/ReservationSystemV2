@@ -1,0 +1,760 @@
+h1{
+  text-align: center;
+}
+h2{
+  margin-left: 1100px;
+  font-size: 13px;
+  margin-top:-40px;
+}
+h3{
+  margin-left: 1170px;
+  font-size: 13px;
+  margin-top:-26px;
+}
+ul.menu{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color:#ffcb0c;
+  border-style: solid;
+  
+}
+
+li.home_index{
+  float: left;
+  margin-right: -450px;
+  margin-left: 420px;
+}
+li.events_index{
+  float: left;
+  margin-right: -450px;
+  margin-left: 500px;
+}
+li.faci_index{
+  float: left;
+  margin-right: -450px;
+  margin-left: 500px;
+}
+
+li.home{
+  float: left;
+  margin-right: -450px;
+  margin-left: 315px;
+}
+li.events{
+  float: left;
+  margin-right: -450px;
+  margin-left: 395px;
+}
+li.faci{
+  float: left;
+  margin-right: -450px;
+  margin-left: 450px;
+}
+li.reser{
+  float: left;
+  margin-right: -450px;
+  margin-left: 450px;
+}
+li.req{
+  float: left;
+  margin-right: -450px;
+  margin-left: 450px;
+}
+li.rep{
+  float: left;
+  margin-right: -450px;
+  margin-left: 450px;
+}
+li a.home{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: bold;
+
+}
+li a.events{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: bold;
+
+}
+li a.faci{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: bold;
+
+}
+li a.reser{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: bold;
+
+}
+li a.req{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: bold;
+
+}
+li a.rep{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: bold;
+
+}
+li a:hover {
+  text-decoration: underline;
+}
+/* Login Form(Pop-up)*/
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Dropdown for profile */
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.dropdown .dropbtn {
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  color: black;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 150px;
+  border: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button.loginB {
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -21em;
+  margin-right: 100px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.logincontainer {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.loginmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 350px;
+  top: 120px;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #778899;
+  padding-top: 20px;
+  border-color: #ffcb0c;
+  border: solid; 
+}
+
+/* Modal Content/Box */
+.loginmodal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close_signin {
+  position: absolute;
+  right: 10px;
+  top: -50px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.close_signin:hover,
+.close_signin:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*SIGN UP*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button.signupB {
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -21em;
+  margin-right: 11px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button.signupB:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn_signup {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn_signup, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.signupbtn{
+  background-color: #008000;
+  padding: 14px 20px; 
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* Extra styles for the cancel button */
+.cancelbtn_login {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.cancelbtn_login, .loginbtn {
+  float: left;
+  width: 50%;
+}
+.loginbtn{
+background-color: #008000;
+  padding: 14px 20px; 
+}
+
+/* Clear floats */
+.clearfix_signup::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix_login::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button for sign up modal */
+.close1 {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  width: auto;
+}
+
+
+.close1:hover, .close1:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.modal1-header {
+  padding-top:5px;
+  padding-bottom: 3px;
+  background-color: #1a245e;
+  color: #fefefe;
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 17px;
+}
+
+
+.signupmodal-header {
+  padding: 30px 16px;
+  background-color: #1a245e;
+  color: white;
+  text-align: center;
+}
+
+.signupmodal-body {padding: 0 0;}
+
+.imgcontainer1 {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  position: relative;
+  padding: 10px;
+}
+
+
+
+
+/* ADMIN CLIENT SIGNUP*/
+
+.container_signup{
+  padding: 16px;
+}
+
+
+.client{
+  position:absolute;
+  left:620px; top:190px;
+  background-color:#4040a1;
+  padding: 0px 0px;
+}
+.admin{
+  position:absolute;
+  left:500px; top:190px;
+  background-color:#4040a1;
+  padding: 0px 0px;
+}
+
+.signup-body {
+  padding: 37px;
+  background-color: #4040a1;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.clientbtn {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #ffcb0c;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 17px; 
+}
+
+.adminbtn {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #ffcb0c;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 17px; 
+}
+
+.modal-content-signup{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal_signup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* The Close Button (x) */
+.close_s {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close_s:hover,
+.close_s:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+
+
+/*EVENTS PAGE*/
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4040a1;
+  color: white;
+}
+
+  /*Room Matrix*/
+  .room_mtrx{
+  width: auto;
+  padding: 10px 20px;
+  background-color: #ffcb0c;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 17px; 
+}
+
+.room_matrix {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 350px;
+  top: 120px;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #D3D3D3;
+  padding-top: 20px;
+  border-color: #ffcb0c;
+  border: solid;
+}
+.prm{
+  text-align: center;
+  font-size: 20px;
+}
+
+.drpdwn_room{
+top: 30px;
+left: 10px;
+font-size: 13px;
+}
+p.drpdwn_room{
+  top: 20px;
+  font-size: 10px;
+}
+li.room_rm{
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+li.sy_rm{
+  float: left;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+li.ss_rm{
+  float: left;
+  margin-left: 70px;
+}
+ul.drpdwn_name{
+ list-style-type: none; 
+}
+
+li.room_rm-drpdwn{
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+li.sy_rm-drpdwn{
+  float: left;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+li.ss_rm-drpdwn{
+  float: left;
+  margin-left: 60px;
+}
+
+#reservation {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+#reservation td, #reservation th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#reservation tr:nth-child(even){background-color: #f2f2f2;}
+
+#reservation tr:hover {background-color: #ddd;}
+
+#reservation th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4040a1;
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* background colors for the approve and decline modal */
+.bc1 {
+  background-color: #3fce23;
+  padding: 5px 40px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.bc2 {
+  background-color: #ff0a0a;
+  padding: 5px 40px;
+  font-size: 15px;
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* table for list of request */
+#a tr:nth-child(1){
+  background-color: #4040a1;
+  color: white;
+}
+
+/* Drop down for list of request */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
