@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2019 at 05:38 PM
+-- Generation Time: Apr 23, 2019 at 02:49 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -54,28 +54,6 @@ INSERT INTO `accounts` (`userID`, `User_type`, `First_name`, `Last_name`, `email
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
---
-
-CREATE TABLE `admin` (
-  `adminID` int(11) NOT NULL,
-  `FirstName` varchar(100) NOT NULL,
-  `LastName` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `Office` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`adminID`, `FirstName`, `LastName`, `email`, `Office`, `password`) VALUES
-(1, 'admin', 'admin', 'admin@email.com', 'Admin', 'Admin123');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `classroom`
 --
 
@@ -101,30 +79,6 @@ INSERT INTO `classroom` (`classID`, `roomName`, `schoolYear`, `semester`, `days`
 (4, 'D422', '2015-2016', '1st', 'MTh', '1:00-2:30', 'IT 325', '1.5', NULL),
 (7, 'D422', '2015-2016', '1st', 'MWF', '9:00-10:00', 'ITF 001', '1.0', NULL),
 (8, 'D422', '2016-2017', '1st', 'MWF', '8:00-9:00', 'IT 422', '1.0', NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `client`
---
-
-CREATE TABLE `client` (
-  `ClientID` int(50) NOT NULL,
-  `First_name` varchar(25) NOT NULL,
-  `Last_name` varchar(25) NOT NULL,
-  `email` varchar(35) NOT NULL,
-  `Organization` varchar(25) NOT NULL,
-  `position` varchar(25) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `Status` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `client`
---
-
-INSERT INTO `client` (`ClientID`, `First_name`, `Last_name`, `email`, `Organization`, `position`, `password`, `Status`) VALUES
-(115, 'Jeron', 'Javierto', '2163947@slu.edu.ph', 'SLU', 'President', 'Jeron123', '');
 
 -- --------------------------------------------------------
 
@@ -182,7 +136,11 @@ CREATE TABLE `reservation` (
 --
 
 INSERT INTO `reservation` (`resID`, `user_ID`, `title`, `Venue`, `start_event`, `end_event`, `status`) VALUES
-(21, 26, 'Ballers', '', '2019-04-19 00:00:00', '2019-04-20 00:00:00', 'Approved');
+(21, 26, 'Ballers', '', '2019-04-19 00:00:00', '2019-04-20 00:00:00', 'Approved'),
+(24, 0, 'Mass', '', '2019-04-19 00:00:00', '2019-04-20 00:00:00', 'Approved'),
+(26, 25, 'No class', '', '2019-04-19 00:00:00', '2019-04-21 00:00:00', 'Approved'),
+(32, 25, 'Party', '', '2019-04-23 12:00:00', '2019-04-23 14:00:00', 'Approved'),
+(34, 25, 'party party', '', '2019-04-24 12:30:00', '2019-04-24 14:30:00', 'Pending');
 
 -- --------------------------------------------------------
 
@@ -215,23 +173,10 @@ ALTER TABLE `accounts`
   ADD PRIMARY KEY (`userID`);
 
 --
--- Indexes for table `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`adminID`);
-
---
 -- Indexes for table `classroom`
 --
 ALTER TABLE `classroom`
   ADD PRIMARY KEY (`classID`);
-
---
--- Indexes for table `client`
---
-ALTER TABLE `client`
-  ADD PRIMARY KEY (`ClientID`),
-  ADD KEY `ClientID` (`ClientID`);
 
 --
 -- Indexes for table `equipment`
@@ -268,22 +213,10 @@ ALTER TABLE `accounts`
   MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- AUTO_INCREMENT for table `admin`
---
-ALTER TABLE `admin`
-  MODIFY `adminID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `classroom`
 --
 ALTER TABLE `classroom`
   MODIFY `classID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT for table `client`
---
-ALTER TABLE `client`
-  MODIFY `ClientID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 
 --
 -- AUTO_INCREMENT for table `equipment`
@@ -301,7 +234,7 @@ ALTER TABLE `facility`
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `resID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `resID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `services`
