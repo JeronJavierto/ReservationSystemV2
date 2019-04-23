@@ -19,7 +19,7 @@
 	  <li class="events"><a href="event_page_admin.php" class="events">EVENTS</a></li>
 	  <li class="faci"><a href="list_facilities_admin.php" class="faci">FACILITIES</a></li>
 	  <li class="reser"><a href="../pages/admin/list_of_reservations.php" class="reser">RESERVATION</a></li>
-	  <li class="req"><a href="../pages/admin/list_of_requests.php" class="req">REQUEST</a></li>
+	  <li class="req"><a href="request_admin.php" class="req">REQUEST</a></li>
 	  <li class="rep"><a href="../pages/admin/report.php" class="rep">REPORTS</a></li>
 	</ul>
 

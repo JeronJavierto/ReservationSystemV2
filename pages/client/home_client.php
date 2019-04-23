@@ -1,5 +1,5 @@
 <?php
-	include("session_client.php");
+	// include("session_client.php");
 ?>
 <!DOCTYPE html>
 <html>

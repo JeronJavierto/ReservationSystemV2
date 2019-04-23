@@ -14,12 +14,9 @@
 <body>    
   
   <ul class="menu">
-    <li class="home"><a href="../pages/admin/home_admin.php" class="home">HOME</a></li>
-    <li class="events"><a href="event_page_admin.php" class="events">EVENTS</a></li>
-    <li class="faci"><a href="list_facilities_admin.php" class="faci">FACILITIES</a></li>
-    <li class="reser"><a href="../pages/admin/list_of_reservations.php" class="reser">RESERVATION</a></li>
-    <li class="req"><a href="../pages/admin/list_of_requests.php" class="req">REQUEST</a></li>
-    <li class="rep"><a href="../pages/admin/report.php" class="rep">REPORTS</a></li>
+    <li class="home"><a href="../pages/client/home_client.php" class="home">HOME</a></li>
+    <li class="events"><a href="event_page_client.php" class="events">EVENTS</a></li>
+    <li class="faci"><a href="list_facilities_client.php" class="faci">FACILITIES</a></li>
   </ul>
 
   <table id="customers">
